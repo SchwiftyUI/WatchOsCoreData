@@ -16,6 +16,8 @@
 		DEEEB45F23526C700027BDF1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEEB45E23526C700027BDF1 /* ExtensionDelegate.swift */; };
 		DEEEB46123526C710027BDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEEB46023526C710027BDF1 /* Assets.xcassets */; };
 		DEEEB46423526C710027BDF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEEB46323526C710027BDF1 /* Preview Assets.xcassets */; };
+		DEEEB47523526D8B0027BDF1 /* WatchOsCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEEEB47323526D8B0027BDF1 /* WatchOsCoreData.xcdatamodeld */; };
+		DEEEB47723526DB70027BDF1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEEB47623526DB70027BDF1 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		DEEEB46023526C710027BDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEEB46323526C710027BDF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEEEB46523526C710027BDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEEB47423526D8B0027BDF1 /* WatchOsCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchOsCoreData.xcdatamodel; sourceTree = "<group>"; };
+		DEEEB47623526DB70027BDF1 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				DEEEB46023526C710027BDF1 /* Assets.xcassets */,
 				DEEEB46523526C710027BDF1 /* Info.plist */,
 				DEEEB46223526C710027BDF1 /* Preview Content */,
+				DEEEB47323526D8B0027BDF1 /* WatchOsCoreData.xcdatamodeld */,
+				DEEEB47623526DB70027BDF1 /* Food.swift */,
 			);
 			path = "WatchOsCoreData WatchKit Extension";
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEEB47523526D8B0027BDF1 /* WatchOsCoreData.xcdatamodeld in Sources */,
 				DEEEB45D23526C700027BDF1 /* HostingController.swift in Sources */,
+				DEEEB47723526DB70027BDF1 /* Food.swift in Sources */,
 				DEEEB45B23526C700027BDF1 /* ContentView.swift in Sources */,
 				DEEEB45F23526C700027BDF1 /* ExtensionDelegate.swift in Sources */,
 			);
@@ -555,6 +563,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEEEB47323526D8B0027BDF1 /* WatchOsCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEEEB47423526D8B0027BDF1 /* WatchOsCoreData.xcdatamodel */,
+			);
+			currentVersion = DEEEB47423526D8B0027BDF1 /* WatchOsCoreData.xcdatamodel */;
+			path = WatchOsCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DEEEB43C23526C6E0027BDF1 /* Project object */;
 }
