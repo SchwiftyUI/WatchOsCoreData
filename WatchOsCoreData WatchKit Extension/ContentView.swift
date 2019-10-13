@@ -24,7 +24,7 @@ struct FoodList: View {
     var body: some View {
         ScrollView {
             ForEach(foodList, id: \.self) { food in
-                NavigationLink(destination: EditFood(food: food)) {
+                NavigationLink(destination: EditFood(food: food).environment(\.managedObjectContext, self.managedObjectContext)) {
                     Text("\(food.name)")
                 }
             }
