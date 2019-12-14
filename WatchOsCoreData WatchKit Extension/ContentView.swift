@@ -49,12 +49,20 @@ struct EditFood: View {
     @Environment(\.presentationMode) var presentationMode
     
     @State var name: String = ""
+    @State var justEdited: Bool = false
     var food: Food
     
     var body: some View {
         VStack {
-            TextField("Food Name", text: $name).onAppear {
-                self.name = self.food.name
+            TextField("Food Name", text: $name, onEditingChanged: { _ in
+                self.justEdited = true
+            }, onCommit: {
+                self.justEdited = true
+            }).onAppear {
+                if !self.justEdited {
+                    self.name = self.food.name
+                }
+                self.justEdited = false
             }
             Button(action: {
                 self.food.name = self.name
